@@ -18,7 +18,7 @@ object Main{
 
 	def concatene (line : Array[String]) : Array[String] = {
 
-		var result : Array[String]= new Array[String](line.length - 2)
+		val result : Array[String]= new Array[String](line.length - 1)
 
 		if (line(0) == "PATENT") {
 			result(0) = "PATENT"
