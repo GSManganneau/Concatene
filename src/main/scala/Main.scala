@@ -44,15 +44,11 @@ object Main{
 			var result = ""
 			for( x <- l ){
 				if (x != l.last){
-					result += "\""
 					result += x
-					result += "\""
 					result += ","
 				}
 				else{
-					result += "\""
 					result += x
-					result += "\""
 					result += "\n"
 				}
 			}
