@@ -1,13 +1,13 @@
-[0m[[0minfo[0m] [0mRunning Concatene [0m
+[0m[[0minfo[0m] [0mRunning Main [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/Desktop/openValue/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/Desktop/Concatene/target/scala-2.11/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.avro/avro-mapred/jars/avro-mapred-1.7.7-hadoop2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.avro/avro-ipc/jars/avro-ipc-1.7.7-tests.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.avro/avro-ipc/jars/avro-ipc-1.7.7.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.avro/avro/bundles/avro-1.7.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.avro/avro/jars/avro-1.7.7.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.4.jar[0m
@@ -59,7 +59,8 @@
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.spark/spark-launcher_2.11/jars/spark-launcher_2.11-2.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.spark/spark-tags_2.11/jars/spark-tags_2.11-2.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.6.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.spark-project.spark/unused/jars/unused-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.apache.spark/spark-network-common_2.11/jars/spark-network-common_2.11-2.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.29.Final.jar[0m
@@ -87,10 +88,9 @@
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.2.11.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.11.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.8.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.8.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.glassfish.jersey.core/jersey-client/jars/jersey-client-2.22.2.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/jars/javax.ws.rs-api-2.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/org.glassfish.jersey.core/jersey-common/jars/jersey-common-2.22.2.jar[0m
@@ -121,8 +121,8 @@
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/oro/oro/jars/oro-2.0.8.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/net.razorvine/pyrolite/jars/pyrolite-4.9.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/guystephanemanganneau/.ivy2/cache/net.sf.py4j/py4j/jars/py4j-0.10.1.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-2 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-2 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m
