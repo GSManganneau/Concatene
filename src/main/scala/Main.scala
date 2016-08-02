@@ -31,7 +31,7 @@ object Main{
 
 		else {
 			result(0) = line(0).replace("\"" , "")
-			result(1) = line(1).replace("\"" , "") + " " + line(2).replace("\"" , "")
+			result(1) = "\"" + line(1).replace("\"" , "") + " " + line(2).replace("\"" , "") + "\""
 			for (i <- 2 to (line.length - 2)) {
 
 				result(i) = line(i+1)
