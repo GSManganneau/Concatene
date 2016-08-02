@@ -4,7 +4,7 @@
 		module="openvalue$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160802114028"
+		publication="20160802141543"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
