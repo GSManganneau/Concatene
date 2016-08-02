@@ -13,7 +13,7 @@ object Main{
 	val writer = new PrintWriter(new File("/home/admin/data/result.txt" ))
 
 	def split (line : String) : Array[String] = {
-		return line.split("\"\",")
+		return line.split(",")
 	}
 
 	def concatene (line : Array[String]) : Array[String] = {
@@ -30,8 +30,8 @@ object Main{
 		}
 
 		else {
-			result(0) = line(0)
-			result(1) = line(1) + " " + line(2)
+			result(0) = line(0).replace("\"" , "")
+			result(1) = line(1).replace("\"" , "") + " " + line(2).replace("\"" , "")
 			for (i <- 3 to (line.length - 2)) {
 
 				result(i) = line(i)
