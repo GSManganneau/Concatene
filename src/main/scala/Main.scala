@@ -20,9 +20,9 @@ object Main{
 
 		val result : Array[String]= new Array[String](line.length - 1)
 
-		if (line(0) == "PATENT") {
-			result(0) = "PATENT"
-			result(1) = "NAME"
+		if (line(0) == "\"PATENT\"") {
+			result(0) = "\"PATENT\""
+			result(1) = "\"NAME\""
 			for (i <- 2 to (line.length - 2)) {
 				result(i) = line(i+1)
 			}
