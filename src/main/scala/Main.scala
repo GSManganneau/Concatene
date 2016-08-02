@@ -18,13 +18,13 @@ object Main{
 
 	def concatene (line : Array[String]) : Array[String] = {
 
-		var result : Array[String]= new Array[String](line.length - 1)
+		var result : Array[String]= new Array[String](line.length - 2)
 
 		if (line(0) == "PATENT") {
 			result(0) = "PATENT"
 			result(1) = "NAME"
 			for (i <- 2 to (line.length - 2)) {
-				result(i) = line(i+1)
+				result(i) = line(i+2)
 			}
 			return result
 		}
@@ -34,7 +34,7 @@ object Main{
 			result(1) = line(1).replace("\"" , "") + " " + line(2).replace("\"" , "")
 			for (i <- 2 to (line.length - 2)) {
 
-				result(i) = line(i)
+				result(i) = line(i+2)
 			}
 			return result
 		}
