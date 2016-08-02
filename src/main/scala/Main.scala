@@ -18,7 +18,7 @@ object Main{
 
 	def concatene (line : Array[String]) : Array[String] = {
 
-		val result = new Array[String](line.length - 1)
+		var result = new Array[String](line.length - 1)
 
 		if (line(0) == "PATENT") {
 			result(0) = "PATENT"
@@ -39,9 +39,28 @@ object Main{
 			}
 			return result
 		}
-
-
 	}
+
+		def reformat (l : Array[String]) : String = {
+			var result = ""
+			for( x <- l ){
+				if (x != l.last){
+					result += "\""
+					result += x
+					result += "\""
+					result += ","
+				}
+				else{
+					result += "\""
+					result += x
+					result += "\""
+					result += "\n"
+				}
+			}
+			return result
+		}
+
+
 
 	def main(args : Array[String]){
 		val conf = new SparkConf().setAppName("Concatene").setMaster("local[2]")
@@ -49,10 +68,8 @@ object Main{
 		val dataRdd = sc.textFile("/home/admin/data/ainventor-short.csv")
 		dataRdd.map (l => split(l))
 		.map(l => concatene(l))
-		.foreach(l => {
-			writer.write(l)
-			writer.write("\n")
-		})
+			  .map (l => reformat (l))
+					.foreach(l => writer.write(l))
 	}
 
 }
