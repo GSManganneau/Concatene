@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="416a914c-ca4f-4ef9-ba5a-cc7b889bdda9" name="Default" comment="&quot;main&quot;&#10;">
+    <list default="true" id="416a914c-ca4f-4ef9-ba5a-cc7b889bdda9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" />
     </list>
@@ -52,8 +52,8 @@
       <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
                 <element signature="e#2#38#0" expanded="true" />
               </folding>
@@ -696,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470150115245</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="&quot;main&quot;">
+      <created>1470150604688</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1470150604688</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -745,7 +752,8 @@
     <MESSAGE value="check&#10;" />
     <MESSAGE value="&quot;first try&quot;&#10;" />
     <MESSAGE value="&quot;main&quot;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;main&quot;&#10;" />
+    <MESSAGE value="&quot;main&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;main&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -860,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="e#2#38#0" expanded="true" />
           </folding>
