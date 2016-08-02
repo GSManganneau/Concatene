@@ -2,6 +2,7 @@
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
+import org.apache.spark._
 import java.io._
 
 
@@ -10,6 +11,10 @@ import java.io._
 object Main{
 
 	val writer = new PrintWriter(new File("/home/admin/data/result.txt" ))
+
+	def split (line : String) : Array[String] = {
+		return line.split(",")
+	}
 
 	def concatene (line : Array[String]) : Array[String] = {
 
@@ -30,6 +35,7 @@ object Main{
 			for (i <- 3 to (line.length - 2)) {
 
 				result(i) = line(i)
+				print(result)
 			}
 			return result
 		}
@@ -41,11 +47,12 @@ object Main{
 		val conf = new SparkConf().setAppName("Concatene").setMaster("local[2]")
 		val sc = new SparkContext(conf)
 		val dataRdd = sc.textFile("/home/admin/data/ainventor-short.csv")
-		dataRdd.map(l => concatene(l.split(",")))
-		dataRdd.foreach( l => writer.write(l + "\n"))
-
-
+		dataRdd.map (l => split(l))
+		.map(l => concatene(l))
+		.foreach(l => {
+			writer.write(l)
+			writer.write("\n")
+		})
 	}
-
 
 }
