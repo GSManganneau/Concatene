@@ -42,7 +42,7 @@ object Main{
 		val sc = new SparkContext(conf)
 		val dataRdd = sc.textFile("/home/admin/data/ainventor-short.csv")
 		dataRdd.map(l => concatene(l.split(",")))
-		dataRdd.foreach( l => writer.write(l))
+		dataRdd.foreach( l => writer.write(l + "\n"))
 
 
 	}
