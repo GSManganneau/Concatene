@@ -2,6 +2,9 @@
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
+import java.io._
+
+
 
 
 object Main{
@@ -35,7 +38,7 @@ object Main{
 	}
 
 	def main(args : Array[String]){
-		val conf = new SparkConf().setAppName(appName).setMaster(master)
+		val conf = new SparkConf().setAppName("Concatene").setMaster("local[2]")
 		val sc = new SparkContext(conf)
 		val dataRdd = sc.textFile("/home/admin/data/ainventor-short.csv")
 		dataRdd.map(l => concatene(l.split(",")))
