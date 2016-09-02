@@ -58,7 +58,7 @@ object Main{
 
 
 	def main(args : Array[String]){
-		val conf = new SparkConf().setAppName("Concatene").setMaster("local[2]")
+		val conf = new SparkConf().setAppName("Concatene").setMaster("local[4]")
 		val sc = new SparkContext(conf)
 		val dataRdd = sc.textFile("/home/admin/data/ainventor-short.csv")
 		dataRdd.map (l => split(l))
